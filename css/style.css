@@ -4,20 +4,22 @@ body {
     overflow: hidden;
 }
 
-ul {
-    height: 100%;
-    font-size: 0;
+#js-carousel__wrap {
+    display: flex;
+    width: 300vw;
 }
 
 .items {
-    display: block;
-    width: max-content;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .photo-item {
     display: inline-block;
     height: 110%;
-    width: 30vw;
+    min-width: 30vw;
     position: relative;
     z-index: 0;
     overflow: hidden;

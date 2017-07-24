@@ -11,25 +11,11 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li class="items item-1">
-            <div class="photo-item">
-                <img src="img/photo-1.jpg" alt="">
-            </div>
-            <div class="photo-item">
-                <img src="img/photo-2.jpg" alt="">
-            </div>
-            <div class="photo-item">
-                <img src="img/photo-3.jpg" alt="">
-            </div>
-            <div class="photo-item">
-                <img src="img/photo-4.jpg" alt="">
-            </div>
-            <div class="underlay"></div>
-            <div class="controls">
-                <div class="numeration">
-                    <span class="counter">1</span>
-                    <span class="divider">
+    <div class="js-carousel">
+        <div class="controls">
+            <div class="numeration">
+                <span id="counter" class="counter">1</span>
+                <span class="divider">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="1.552cm" height="1.552cm">
@@ -37,59 +23,75 @@
                                    d="M42.293,0.293 L43.707,1.707 L1.707,43.707 L0.293,42.293 L42.293,0.293 Z"/>
                         </svg>
                     </span>
-                    <sub class="total">3</sub>
-                </div>
-                <div class="left-arrow">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="0.423cm" height="0.635cm">
-                        <g>
-                            <path fill="#777"
-                                  d="M12.003,15.825 L9.996,17.990 L2.093,11.083 L2.003,11.162 L1.317,10.405 L-0.003,9.251 L0.135,9.101 L-0.003,8.948 L1.635,7.484 L2.003,7.086 L2.042,7.119 L9.996,0.010 L12.003,2.224 L4.310,9.101 L12.003,15.825 Z"/>
-                        </g>
-                    </svg>
-                </div>
-                <div class="right-arrow">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="0.423cm" height="0.635cm">
+                <sub class="total">3</sub>
+            </div>
+            <div id="previous" class="left-arrow">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="0.423cm" height="0.635cm">
+                    <g>
                         <path fill="#777"
-                              d="M11.865,9.101 L12.003,9.251 L10.683,10.405 L9.997,11.162 L9.907,11.083 L2.003,17.990 L-0.004,15.825 L7.690,9.101 L-0.004,2.224 L2.003,0.010 L9.958,7.119 L9.997,7.086 L10.366,7.484 L12.003,8.948 L11.865,9.101 Z"/>
-                    </svg>
+                              d="M12.003,15.825 L9.996,17.990 L2.093,11.083 L2.003,11.162 L1.317,10.405 L-0.003,9.251 L0.135,9.101 L-0.003,8.948 L1.635,7.484 L2.003,7.086 L2.042,7.119 L9.996,0.010 L12.003,2.224 L4.310,9.101 L12.003,15.825 Z"/>
+                    </g>
+                </svg>
+            </div>
+            <div id="next" class="right-arrow">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="0.423cm" height="0.635cm">
+                    <path fill="#777"
+                          d="M11.865,9.101 L12.003,9.251 L10.683,10.405 L9.997,11.162 L9.907,11.083 L2.003,17.990 L-0.004,15.825 L7.690,9.101 L-0.004,2.224 L2.003,0.010 L9.958,7.119 L9.997,7.086 L10.366,7.484 L12.003,8.948 L11.865,9.101 Z"/>
+                </svg>
+            </div>
+        </div>
+        <div id="js-carousel__wrap">
+            <div class="items item-1">
+                <div class="photo-item">
+                    <img src="img/photo-1.jpg" alt="">
                 </div>
+                <div class="photo-item">
+                    <img src="img/photo-2.jpg" alt="">
+                </div>
+                <div class="photo-item">
+                    <img src="img/photo-3.jpg" alt="">
+                </div>
+                <div class="photo-item">
+                    <img src="img/photo-4.jpg" alt="">
+                </div>
+                <div class="underlay"></div>
             </div>
-        </li>
-        <li class="items item-2">
-            <div>
-                <img src="img/photo-1.jpg" alt="">
+            <div class="items item-2">
+                <div class="photo-item">
+                    <img src="img/photo-1.jpg" alt="">
+                </div>
+                <div class="photo-item">
+                    <img src="img/photo-2.jpg" alt="">
+                </div>
+                <div class="photo-item">
+                    <img src="img/photo-3.jpg" alt="">
+                </div>
+                <div class="photo-item">
+                    <img src="img/photo-4.jpg" alt="">
+                </div>
+                <div class="underlay"></div>
             </div>
-            <div>
-                <img src="img/photo-2.jpg" alt="">
+            <div class="items item-3">
+                <div class="photo-item">
+                    <img src="img/photo-1.jpg" alt="">
+                </div>
+                <div class="photo-item">
+                    <img src="img/photo-2.jpg" alt="">
+                </div>
+                <div class="photo-item">
+                    <img src="img/photo-3.jpg" alt="">
+                </div>
+                <div class="photo-item">
+                    <img src="img/photo-4.jpg" alt="">
+                </div>
+                <div class="underlay"></div>
             </div>
-            <div>
-                <img src="img/photo-3.jpg" alt="">
-            </div>
-            <div>
-                <img src="img/photo-4.jpg" alt="">
-            </div>
-            <div class="underlay"></div>
-        </li>
-        <li class="items item-3">
-            <div>
-                <img src="img/photo-1.jpg" alt="">
-            </div>
-            <div>
-                <img src="img/photo-2.jpg" alt="">
-            </div>
-            <div>
-                <img src="img/photo-3.jpg" alt="">
-            </div>
-            <div>
-                <img src="img/photo-4.jpg" alt="">
-            </div>
-            <div class="underlay"></div>
-        </li>
-    </ul>
+        </div>
+    </div>
     <script src="js/index.js"></script>
 </body>
 </html>
