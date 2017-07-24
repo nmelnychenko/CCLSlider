@@ -95,7 +95,13 @@ body {
     cursor: pointer;
 }
 
+.left-arrow path,
+.right-arrow path {
+    fill: #777;
+    transition: fill .5s ease;
+}
+
 .left-arrow:hover path,
 .right-arrow:hover path {
-    fill: rgb(225, 20, 76);
+    fill: #FF144C;
 }
