@@ -1,0 +1,137 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: AudiType;
+  src: url(../fonts/AudiType-ExtendedNormal.eot); }
+@font-face {
+  font-family: AudiType;
+  src: url(../fonts/AudiType-ExtendedNormal.woff) format("woff"); }
+@font-face {
+  font-family: AudiType;
+  src: url("../fonts/AudiType-ExtendedNormal.svg#AudiTypeScreen-Normal") format("svg"); }
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+  body .controls {
+    position: fixed;
+    bottom: 50px;
+    left: 60px;
+    z-index: 99; }
+    body .controls .numeration {
+      position: relative;
+      top: -25px;
+      text-align: center;
+      padding-left: 20px;
+      color: #777;
+      font-family: AudiType, sans-serif;
+      font-size: 16px; }
+      body .controls .numeration .counter,
+      body .controls .numeration .divider {
+        font-size: 48px;
+        color: #fff; }
+      body .controls .numeration .counter {
+        position: absolute;
+        top: -50px;
+        left: 23px; }
+      body .controls .numeration .divider {
+        position: absolute;
+        top: -25px;
+        left: 25px; }
+    body .controls .left-arrow {
+      margin-right: 4rem; }
+    body .controls .left-arrow,
+    body .controls .right-arrow {
+      display: inline-block;
+      cursor: pointer; }
+      body .controls .left-arrow path,
+      body .controls .right-arrow path {
+        fill: #777;
+        transition: fill .5s ease; }
+      body .controls .left-arrow:hover path,
+      body .controls .right-arrow:hover path {
+        fill: #FF144C; }
+  body #js-carousel__wrap {
+    display: flex;
+    width: 300vw;
+    transition: all .5s ease; }
+    body #js-carousel__wrap .items {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100vw;
+      overflow: hidden; }
+    body #js-carousel__wrap .photo-item {
+      display: inline-block;
+      height: 110%;
+      min-width: 30vw;
+      position: relative;
+      z-index: 0;
+      overflow: hidden;
+      top: -5%;
+      left: -5%;
+      transform: rotate(5deg) scale(1);
+      transition: all .5s ease;
+      cursor: pointer; }
+      body #js-carousel__wrap .photo-item:hover {
+        z-index: 2;
+        transform: rotate(5deg) scale(1.2); }
+        body #js-carousel__wrap .photo-item:hover ~ .underlay {
+          z-index: 1; }
+      body #js-carousel__wrap .photo-item img {
+        height: 105vh;
+        width: auto;
+        transform: rotate(-5deg); }
+        body #js-carousel__wrap .photo-item img.first-photo {
+          margin-left: -5%;
+          margin-top: 0; }
+        body #js-carousel__wrap .photo-item img.second-photo {
+          margin-left: -14vw;
+          margin-top: 4%; }
+        body #js-carousel__wrap .photo-item img.third-photo {
+          margin-top: 5%;
+          margin-left: -125%; }
+        body #js-carousel__wrap .photo-item img.fourth-photo {
+          margin-top: 15%;
+          margin-left: -232%; }
+    body #js-carousel__wrap .underlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      background: #000;
+      opacity: .3; }
+
+/*# sourceMappingURL=style.css.map */
