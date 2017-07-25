@@ -1,0 +1,66 @@
+body {
+    .controls {
+        bottom: 10px;
+        left: 15px;
+
+        .numeration {
+            top: -5px;
+            left: 5px;
+
+            .counter {
+                font-size: 34px;
+                top: -34px;
+            }
+        }
+
+        .left-arrow,
+        .right-arrow {
+            -webkit-touch-callout:none;
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+            -webkit-tap-highlight-color:rgba(0,0,0,0);
+
+            path {
+                fill: $color2;
+                transition: fill .5s ease;
+            }
+
+            &:focus path,
+            &:active path {
+                fill: $color4;
+            }
+        }
+    }
+
+    #js-carousel__wrap .items {
+        flex-direction: column;
+
+        .photo-item {
+            height: 30vh;
+            min-width: 110vw;
+
+            img {
+                width: 140vw;
+                height: auto;
+                margin-left: 4%;
+                margin-top: -15%;
+
+                &.first-photo {
+                    margin-top: -34%;
+                }
+
+                &.third-photo {
+                    margin-top: -18%;
+                    margin-left: -20%;
+                }
+
+                &.fourth-photo {
+                    margin-left: -30%;
+                }
+            }
+        }
+    }
+}
+

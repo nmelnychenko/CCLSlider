@@ -134,4 +134,48 @@ body {
       background: #000;
       opacity: .3; }
 
+@media (max-width: 414px) {
+  body .controls {
+    bottom: 10px;
+    left: 15px; }
+    body .controls .numeration {
+      top: -5px;
+      left: 5px; }
+      body .controls .numeration .counter {
+        font-size: 34px;
+        top: -34px; }
+    body .controls .left-arrow,
+    body .controls .right-arrow {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent; }
+      body .controls .left-arrow path,
+      body .controls .right-arrow path {
+        fill: #777;
+        transition: fill .5s ease; }
+      body .controls .left-arrow:focus path, body .controls .left-arrow:active path,
+      body .controls .right-arrow:focus path,
+      body .controls .right-arrow:active path {
+        fill: #FF144C; }
+  body #js-carousel__wrap .items {
+    flex-direction: column; }
+    body #js-carousel__wrap .items .photo-item {
+      height: 30vh;
+      min-width: 110vw; }
+      body #js-carousel__wrap .items .photo-item img {
+        width: 140vw;
+        height: auto;
+        margin-left: 4%;
+        margin-top: -15%; }
+        body #js-carousel__wrap .items .photo-item img.first-photo {
+          margin-top: -34%; }
+        body #js-carousel__wrap .items .photo-item img.third-photo {
+          margin-top: -18%;
+          margin-left: -20%; }
+        body #js-carousel__wrap .items .photo-item img.fourth-photo {
+          margin-left: -30%; } }
+
 /*# sourceMappingURL=style.css.map */

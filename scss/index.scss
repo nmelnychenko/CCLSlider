@@ -1,4 +1,11 @@
 @import './reset';
 @import './fonts';
 @import './variables';
-@import './styles';
+@import './mq.scss';
+
+@import './desktop';
+
+@media #{$phonePortrait} {
+    @import './mobile';
+}
+
